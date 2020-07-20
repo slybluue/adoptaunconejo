@@ -39,6 +39,17 @@
 
     }
 
+    &-pink {
+        margin-top: 15rem;
+        background-color: $color-primary;
+        color: white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+
+    }
+
     &-animated {
         animation: MoveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;

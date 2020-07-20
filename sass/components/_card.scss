@@ -1,0 +1,141 @@
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 51rem;
+
+    &__heading {
+        height: 51rem;
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 21rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+        
+    }
+
+    &__heading-span {
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary, .85),
+             rgba($color-tertiary, .85));
+             padding: 1rem 1.5rem;
+        }
+    }
+
+    &__details {
+
+        padding: 3rem;
+
+        ul {
+
+            width: 80%;
+            margin: 0 auto;
+
+            
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1.5rem;
+                list-style: none;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+
+    &-picture {
+        background-size: cover;
+        
+
+        &-1 {
+            
+            background-image: url(../img/adopcion-1.jpg);
+            font-size: 16rem;
+            clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
+            
+        }
+
+        &-2 {
+            background-image: url(../img/adopcion-2.jpg);
+            font-size: 16rem;
+            clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
+        }
+
+        &-3 {
+            background-image: url(../img/adopcion-3.jpg);
+            font-size: 16rem;
+            clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
+        }
+    }
+    
+
+    &__side {
+        height: 60rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 4px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+
+        &-front {
+            background-color: $color-white ;
+        }
+
+        &-back {
+            transform: rotateY(180deg); }
+    }
+    &:hover &__side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side-back {
+        transform: rotateY(0);
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    &__price-box {
+        
+        margin-bottom: 8rem;
+        color: white;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 3rem;
+        
+    }
+}
+
+.back-1 {
+    background-image: linear-gradient(to right bottom, $color-tertiary, $color-primary);
+}
+
+.back-2 {
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secundary);
+}
+
+.back-3 {
+    background-image: linear-gradient(to right bottom, $color-secundary, $color-tertiary);
+}

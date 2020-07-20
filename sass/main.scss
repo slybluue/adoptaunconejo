@@ -1,4 +1,4 @@
- @import "abstracts/functions",
+ @import 
  "abstracts/mixins",
  "abstracts/variables",
  "base/base",
@@ -7,6 +7,7 @@
  "base/utilities",
  "pages/home",
  "components/button",
+ "components/card",
  "components/composition",
  "components/feature-box",
  "layout/header",
@@ -16,4 +17,9 @@
     html {
         font-size: 31.25%; 
     }
+
+    .rainbow {
+        width: 60rem;
+    }
+
 }  
