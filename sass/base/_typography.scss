@@ -1,0 +1,53 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+    line-height: 1.7;
+    color: $text-color-light;
+    padding: 3rem; 
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    
+    
+&-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation: MoveInLeft 1s ease-out;
+}
+
+&-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1.75rem;
+    animation: MoveInRight 1s ease-out;
+}
+}
+
+.heading-secundary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500; 
+    letter-spacing: .5rem;
+
+}
+
+.heading-tertiary {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: uppercase; 
+}
+
+.paragraph {
+    font-size: $default-font;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

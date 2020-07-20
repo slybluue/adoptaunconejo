@@ -1,0 +1,83 @@
+@keyframes MoveInLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes MoveInRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes MoveInBottom {
+
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+// RAINBOW
+.rainbow {
+    height: .5rem;
+    width: 70rem;
+    position: relative;
+    margin: auto;
+    background: linear-gradient(124deg, #f80449,#b406c4,#f56629);
+background-size: 1800% 1800%;
+border-radius: 100px;
+-webkit-animation: rainbow 12s ease infinite;
+-z-animation: rainbow 12s ease infinite;
+-o-animation: rainbow 12s ease infinite;
+  animation: rainbow 12s ease infinite; 
+  box-shadow:  0 0.5rem black 0.4;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
