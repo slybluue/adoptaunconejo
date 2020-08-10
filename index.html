@@ -12,6 +12,28 @@
 </head>
 
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation-button">
+            <span class="navigation-icon"></span>
+        
+        </label>
+
+        <div class="navigation-background"></div>   
+
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="#" class="navigation-link">About CC</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Benefits</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Adopt now</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Stories</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
     <header class="header">
         <div class="header__logo-box">
             <img src="img/rabbit.png" alt="rabbit-logo" class="header__logo-bunny">
@@ -210,12 +232,17 @@
 
 <section class="section-stories">
 
+    <div class="bg-video" >
+        <video class="bg-video__content" autoplay mute loop>
+            <source src="img\bg-land.mp4" type="video/mp4" class="bg-video__vid">
+                Your browser is not supported! 
+        </video>
+    </div>
+
     <div class="center-u-text u-margin-bottom-medium">
         <h2 class="heading-secundary">
             Personas felices, con mascotas felices
         </h2>
-    </div>
-    <div class="rainbow rainbow-bg">
     </div>
 
     <div class="row">
@@ -237,6 +264,7 @@
         <div class="story">
             <figure class="story__shape">
                 <img src="img\historia-2.png" alt="conejo" class="story__img">
+                <figcaption class="story__caption">Moreno Maikel</figcaption>
                 
             </figure>
             <div class="story__text"></div>
@@ -247,8 +275,38 @@
                 ipsa ducimus aliquam?.</p>
         </div>
     </div>
-</section>
-    </main>
+    <div class="center-u-text ">
+        <a href="#" class="btn-text">Lee otras historias &rarr;</a>
+    </div>
+</section> 
+ 
+</main>
+
+<footer class="footer">
+    <div class="footer-logo">
+        <img src="img\rabbit.png" alt="bunny-logo" class="footer-logo-bunny">
+    </div>
+
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="footer-navigation">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-item-link">Company</a></li>
+                    <li class="footer-item"><a href="#" class="footer-item-link">Contact us</a></li>
+                    <li class="footer-item"><a href="#" class="footer-item-link">Bunnies</a></li>
+                    <li class="footer-item"><a href="#" class="footer-item-link">Privacy</a></li>
+                    <li class="footer-item"><a href="#" class="footer-item-link">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <p class="footer-copyright">
+                All rights belong to Icicle INN &copy; by Max &copy; and Don Omar &copy;
+            </p>
+        </div>
+    </div>
+
+</footer>
     </body>
 
     </html>
